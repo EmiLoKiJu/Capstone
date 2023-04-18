@@ -1,6 +1,6 @@
 header {
   font-family: 'COCOGOOSE', sans-serif;
-  margin: 8px;
+  margin: 8px 8px 8px 12px;
 }
 
 body {
@@ -59,10 +59,27 @@ img {
 
 .justifyandaligncenter {
   align-items: center;
+  justify-content: center;
 }
 
 .spacebetween {
   justify-content: space-between;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.py16 {
+  padding: 16px 0;
+}
+
+.my16 {
+  margin: 16px 0;
+}
+
+.logo {
+  justify-self: flex-end;
 }
 
 .homepage {
@@ -146,4 +163,47 @@ img {
 
 .comediantext {
   margin-left: 14%;
+}
+
+/* about html */
+
+.bigtitle {
+  font-size: 32px;
+  color: #eb8d00;
+}
+
+.eventdescription2 {
+  font-family: 'Lato', sans-serif;
+  margin: 5px 4%;
+  padding: 6%;
+  border: 2px #eee7d9 solid;
+  background-color: white;
+}
+
+.myemail {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.imgcontainer {
+  padding: 8px;
+  border: 2px solid #dadada;
+}
+
+.spanline2 {
+  background-color: #dadada;
+  height: 2px;
+  width: 100%;
+}
+
+.pastevent {
+  width: 75%;
+  height: 75%;
+}
+
+.partners {
+  background-color: black;
+  color: white;
+  margin-top: 16px;
+  padding-bottom: 16px;
 }
