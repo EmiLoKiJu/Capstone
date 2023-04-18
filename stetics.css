@@ -1,3 +1,149 @@
 header {
   font-family: 'COCOGOOSE', sans-serif;
+  margin: 8px;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+  margin: 16px 4%;
+  font-size: 32px;
+  background-image: url(img/backgroundorange.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 18px;
+  margin: 8px 4% 0px 4%;
+  padding-top: 16px;
+  font-weight: 400;
+  color: #ec9b23;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  margin: 16px 4% 0px 4%;
+}
+
+h4 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 16px;
+  margin: 0 8px 0 8px;
+  font-weight: 400;
+  color: #ec9b23;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  margin: 0px 4%;
+  padding-bottom: 16px;
+}
+
+img {
+  object-fit: contain;
+}
+
+.dflex {
+  display: flex;
+}
+
+.flexcolumn {
+  flex-direction: column;
+}
+
+.justifyandaligncenter {
+  align-items: center;
+}
+
+.spacebetween {
+  justify-content: space-between;
+}
+
+.homepage {
+  width: 100%;
+  background-image: url(img/backgroundimg.jpg);
+  background-size: cover;
+}
+
+.eventdescription {
+  font-family: 'Lato', sans-serif;
+  margin: 5px 4%;
+  padding: 6%;
+  border: 2px white solid;
+  background-color: #eee7d9;
+}
+
+.mainprogram {
+  background-image: url(img/backgroundblack.jpg);
+  background-size: cover;
+  color: white;
+  padding-top: 16px;
+}
+
+.spanline1 {
+  background-color: #ec9b23;
+  height: 2px;
+  width: 20%;
+}
+
+.programitem {
+  margin: 16px 4%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.programicon {
+  margin: 0 8px 0 16px;
+}
+
+.colorwhite {
+  padding-top: 16px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.button {
+  font-family: 'COCOGOOSE', sans-serif;
+  background-color: #ec9b23;
+  color: white;
+  margin: 16px 4%;
+  padding: 16px;
+}
+
+.featuredspeakers {
+  padding-top: 16px;
+}
+
+.speaker {
+  align-self: flex-start;
+  justify-content: space-between;
+  margin: 16px 9%;
+}
+
+.instagramicon {
+  width: 104px;
+  height: 104px;
+  margin: 4px;
+}
+
+.comedianname {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 6px;
+}
+
+.profession {
+  margin: 0;
+  padding: 0;
+}
+
+.comediantext {
+  margin-left: 14%;
 }
