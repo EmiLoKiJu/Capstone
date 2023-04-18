@@ -37,8 +37,7 @@ h4 {
   margin: 0 8px 0 8px;
   font-weight: 400;
   color: #ec9b23;
-  width: 100px !important;
-  white-space: nowrap;
+  width: 100px;
 }
 
 p {
@@ -178,6 +177,14 @@ a {
   margin-left: 14%;
 }
 
+.menudesktop {
+  display: none;
+}
+
+.logoimgdesktop {
+  display: none;
+}
+
 /* about html */
 
 .bigtitle {
@@ -239,18 +246,23 @@ a {
     padding-bottom: 32px;
   }
 
-  .eventdescription {
-    margin: 0px 8%;
-    width: 40%;
-    padding: 2%;
-  }
-
   h3 {
     margin: 32px 8% 0 8%;
   }
 
+  h4 {
+    padding-top: 16px;
+    height: 35px;
+  }
+
   p {
     margin: 0px 8%;
+  }
+
+  .eventdescription {
+    margin: 0px 8%;
+    width: 40%;
+    padding: 2%;
   }
 
   .pb128 {
@@ -260,6 +272,10 @@ a {
   .py64 {
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+
+  .mt32 {
+    margin-top: 32px;
   }
 
   .logo {
@@ -305,7 +321,7 @@ a {
     flex-direction: column;
     margin: 16px 2px;
     padding-top: 16px;
-    height: 256px;
+    height: 286px;
     justify-content: start;
   }
 
@@ -322,5 +338,29 @@ a {
     margin: 32px;
     font-size: 24px;
     text-decoration: underline;
+  }
+
+  /* about html */
+
+  .eventdescription2 {
+    margin: 0px 8%;
+    width: 40%;
+    padding: 2%;
+  }
+
+  .pasteventscontainer {
+    flex-direction: row;
+  }
+
+  .pastevent:first-child {
+    width: 50%;
+    height: 50%;
+    margin: 32px;
+  }
+
+  .pastevent:last-child {
+    width: 29%;
+    height: 29%;
+    margin: 32px;
   }
 }
