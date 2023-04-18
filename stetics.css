@@ -37,6 +37,8 @@ h4 {
   margin: 0 8px 0 8px;
   font-weight: 400;
   color: #ec9b23;
+  width: 100px !important;
+  white-space: nowrap;
 }
 
 p {
@@ -47,6 +49,21 @@ p {
 
 img {
   object-fit: contain;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 20px 4% 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ec9b23;
 }
 
 .dflex {
@@ -76,10 +93,6 @@ img {
 
 .my16 {
   margin: 16px 0;
-}
-
-.logo {
-  justify-self: flex-end;
 }
 
 .homepage {
@@ -206,4 +219,108 @@ img {
   color: white;
   margin-top: 16px;
   padding-bottom: 16px;
+}
+
+.seefullprogram {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    margin: 0px 8%;
+    padding-top: 64px;
+    font-size: 32px;
+    font-weight: 100;
+  }
+
+  h1 {
+    margin: 0px 8%;
+    font-size: 48px;
+    padding-bottom: 32px;
+  }
+
+  .eventdescription {
+    margin: 0px 8%;
+    width: 40%;
+    padding: 2%;
+  }
+
+  h3 {
+    margin: 32px 8% 0 8%;
+  }
+
+  p {
+    margin: 0px 8%;
+  }
+
+  .pb128 {
+    padding-bottom: 128px;
+  }
+
+  .py64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .logo {
+    order: -1;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menudesktop {
+    display: block;
+  }
+
+  .logoimgmobile {
+    display: none;
+  }
+
+  .logoimgdesktop {
+    display: block;
+  }
+
+  .campaign {
+    width: 360px;
+    height: 34px;
+    color: #eb8d00;
+    border: solid 2px #eb8d00;
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 8px;
+  }
+
+  .mainprogramtitle {
+    font-size: 24px;
+  }
+
+  .programcontainer {
+    flex-direction: row;
+    width: 90%;
+  }
+  
+  .programitem {
+    flex-direction: column;
+    margin: 16px 2px;
+    padding-top: 16px;
+    height: 256px;
+    justify-content: start;
+  }
+
+  .spanline1 {
+    margin: 16px 0;
+  }
+
+  .jointhis {
+    display: none;
+  }
+
+  .seefullprogram {
+    display: block;
+    margin: 32px;
+    font-size: 24px;
+    text-decoration: underline;
+  }
 }
