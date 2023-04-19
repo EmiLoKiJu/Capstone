@@ -249,8 +249,9 @@ h2.mp0 {
   display: none;
 }
 
-#menumobile {
-  z-index: 2;
+#menumobile li {
+  margin: 16px 0 0 0;
+  width: fit-content;
 }
 
 .menumobile .fixed{
