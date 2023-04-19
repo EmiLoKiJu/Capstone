@@ -20,7 +20,7 @@ h1 {
 h2 {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 18px;
-  margin: 8px 4% 0px 4%;
+  margin: 8px 4% 0 4%;
   padding-top: 16px;
   font-weight: 400;
   color: #ec9b23;
@@ -28,7 +28,7 @@ h2 {
 
 h3 {
   font-family: 'Lato', sans-serif;
-  margin: 16px 4% 0px 4%;
+  margin: 16px 4% 0 4%;
 }
 
 h4 {
@@ -42,7 +42,7 @@ h4 {
 
 p {
   font-family: 'Lato', sans-serif;
-  margin: 0px 4%;
+  margin: 0 4%;
   padding-bottom: 16px;
 }
 
@@ -162,7 +162,6 @@ a {
 
 .Comedian {
   align-self: flex-start;
-  /* justify-content: space-between; */
   margin: 16px 9%;
   width: 50%;
 }
@@ -252,19 +251,16 @@ h2.mp0 {
 #menumobile li {
   margin: 16px 0 0 0;
   width: fit-content;
+  font-size: 24px;
 }
 
-.menumobile .fixed{
+.menumobile .fixed {
   border: 2px #eb8d00 solid;
   z-index: 1;
   background-color: white;
   width: 80%;
   height: 80%;
   padding: 4%;
-}
-
-.menumobile li {
-  font-size: 24px;
 }
 
 .spanline1.dflex {
@@ -284,14 +280,14 @@ h2.mp0 {
 
 @media screen and (min-width: 768px) {
   h2 {
-    margin: 0px 8%;
+    margin: 0 8%;
     padding-top: 64px;
     font-size: 32px;
     font-weight: 100;
   }
 
   h1 {
-    margin: 0px 8%;
+    margin: 0 8%;
     font-size: 48px;
     padding-bottom: 32px;
   }
@@ -306,11 +302,11 @@ h2.mp0 {
   }
 
   p {
-    margin: 0px 8%;
+    margin: 0 8%;
   }
 
   .eventdescription {
-    margin: 0px 8%;
+    margin: 0 8%;
     width: 40%;
     padding: 2%;
   }
@@ -356,7 +352,7 @@ h2.mp0 {
     flex-direction: row;
     padding: 16px;
   }
-  
+
   .programitem {
     flex-direction: column;
     margin: 16px 2px;
@@ -383,7 +379,6 @@ h2.mp0 {
   .comediancontainer {
     width: 100%;
     flex-direction: row;
-    /* justify-content: space-around; */
   }
 
   .featuredcomedians {
@@ -417,7 +412,7 @@ h2.mp0 {
   /* about html */
 
   .eventdescription2 {
-    margin: 0px 8%;
+    margin: 0 8%;
     width: 40%;
     padding: 2%;
   }
