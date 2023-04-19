@@ -94,6 +94,10 @@ a {
   margin: 16px 0;
 }
 
+.alignselfcenter {
+  align-self: center;
+}
+
 .homepage {
   width: 100%;
   background-image: url(img/backgroundimg.jpg);
@@ -144,14 +148,15 @@ a {
   padding: 16px;
 }
 
-.featuredspeakers {
+.featuredcomedians {
   padding-top: 16px;
 }
 
-.speaker {
+.Comedian {
   align-self: flex-start;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 16px 9%;
+  width: 50%;
 }
 
 .instagramicon {
@@ -162,19 +167,23 @@ a {
 
 .comedianname {
   color: black;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   margin: 0;
   padding-top: 6px;
 }
 
-.profession {
+.mp0 {
   margin: 0;
   padding: 0;
 }
 
+h2.mp0 {
+  font-size: 16px;
+}
+
 .comediantext {
-  margin-left: 14%;
+  margin-left: 10%;
 }
 
 .menudesktop {
@@ -314,7 +323,7 @@ a {
 
   .programcontainer {
     flex-direction: row;
-    width: 90%;
+    padding: 16px;
   }
   
   .programitem {
@@ -338,6 +347,34 @@ a {
     margin: 32px;
     font-size: 24px;
     text-decoration: underline;
+  }
+
+  .comediancontainer {
+    width: 100%;
+    flex-direction: row;
+    /* justify-content: space-around; */
+  }
+
+  .featuredcomedians {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .comediantext {
+    margin-left: 2%;
+  }
+
+  .Comedian {
+    margin: 16px 2%;
+  }
+
+  .instagramicon {
+    width: 165px;
+    height: 165px;
+  }
+
+  p.mp0 {
+    width: 50%;
   }
 
   /* about html */
