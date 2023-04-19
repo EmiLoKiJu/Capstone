@@ -6,7 +6,8 @@ const menumobile = document.querySelector('#menumobile');
 const menubutton = document.querySelector('.menu');
 
 const clickHandler = () => {
-  if (event.target !== menumobile && !event.target.classList.contains('spanline1') && !event.target.classList.contains('menu') && !menumobile.classList.contains('dnone')) { // eslint-disable no-restricted-globals
+  // eslint-disable-next-line no-restricted-globals
+  if (event.target !== menumobile && !event.target.classList.contains('spanline1') && !event.target.classList.contains('menu') && !menumobile.classList.contains('dnone')) { 
     menumobile.classList.toggle('dnone');
     document.removeEventListener('click', clickHandler);
   }
