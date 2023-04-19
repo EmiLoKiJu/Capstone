@@ -1,4 +1,24 @@
 /* eslint-disable no-plusplus */
+//menu
+const menumobile = document.querySelector('#menumobile');
+const menubutton = document.querySelector('.menu');
+
+const clickHandler = () => {
+  if (event.target !== menumobile && !event.target.classList.contains('spanline1') && !event.target.classList.contains('menu') && !menumobile.classList.contains('dnone')) {
+    menumobile.classList.toggle('dnone');
+    document.removeEventListener('click', clickHandler);
+  }
+}
+
+menubutton.addEventListener('click', () => {
+  if(menumobile.classList.contains('dnone')) {
+    menumobile.classList.toggle('dnone');
+    document.addEventListener('click', clickHandler);
+  }
+});
+
+//comedians
+
 const comediancontainer = document.querySelectorAll('.comediancontainer');
 let comedians = {
   'Matt Rife' : [
@@ -11,13 +31,13 @@ let comedians = {
     'Comedian',
     'jeffacuri.png',
     'https://www.instagram.com/jarcuri/',
-    'New Clips M/W/F <br> Booking: KValentine@wmeagency.com <br> MLevy@wmeagency.com <br> Email list/Ticket links👇 <br> linktr.ee/jeffarcuri'
+    'New Clips M/W/F <br> Booking: KValentine <br> @wmeagency.com <br> MLevy@wmeagency.com <br> Email list/Ticket links👇 <br> linktr.ee/jeffarcuri'
   ],
   'Luke Kidgell' : [
     'Comedian',
     'lukekidgell.png',
     'https://www.instagram.com/lukekidgell/',
-    'Half of @luke.and.meg <br> Touring Aus 2023 🇦🇺 <br> First shows are Werribee, Albury, Griffith, Canberra, Nowra, Goulburn, Orange, Newcastle, Sydney & more! ⬇️ <br> linktr.ee/lukekidgell'
+    'Half of @luke.and.meg <br> Touring Aus 2023 🇦🇺 <br> ⬇️ <br> linktr.ee/lukekidgell'
   ],
   'Reuben Solo' : [
     'Comedian',

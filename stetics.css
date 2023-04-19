@@ -98,6 +98,14 @@ a {
   align-self: center;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.dnone {
+  display: none;
+}
+
 .homepage {
   width: 100%;
   background-image: url(img/backgroundimg.jpg);
@@ -241,6 +249,38 @@ h2.mp0 {
   display: none;
 }
 
+#menumobile {
+  z-index: 2;
+}
+
+.menumobile .fixed{
+  border: 2px #eb8d00 solid;
+  z-index: 1;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  padding: 4%;
+}
+
+.menumobile li {
+  font-size: 24px;
+}
+
+.spanline1.dflex {
+  margin-top: 26px;
+  width: 75%;
+}
+
+.campaign {
+  width: 220px;
+  height: 37px;
+  color: #eb8d00;
+  border: solid 3px #eb8d00;
+  text-align: center;
+  padding-top: 8px;
+  margin-top: 32px;
+}
+
 @media screen and (min-width: 768px) {
   h2 {
     margin: 0px 8%;
@@ -307,16 +347,6 @@ h2.mp0 {
     display: block;
   }
 
-  .campaign {
-    width: 360px;
-    height: 34px;
-    color: #eb8d00;
-    border: solid 2px #eb8d00;
-    text-align: center;
-    padding-top: 8px;
-    margin-top: 8px;
-  }
-
   .mainprogramtitle {
     font-size: 24px;
   }
@@ -375,6 +405,12 @@ h2.mp0 {
 
   p.mp0 {
     width: 50%;
+  }
+
+  .campaign {
+    width: 360px;
+    height: 34px;
+    margin-top: 8px;
   }
 
   /* about html */
