@@ -1,11 +1,12 @@
 /* eslint-disable no-plusplus */
+
 //  menu
 
 const menumobile = document.querySelector('#menumobile');
 const menubutton = document.querySelector('.menu');
 
 const clickHandler = () => {
-  if (event.target !== menumobile && !event.target.classList.contains('spanline1') && !event.target.classList.contains('menu') && !menumobile.classList.contains('dnone')) {
+  if (event.target !== menumobile && !event.target.classList.contains('spanline1') && !event.target.classList.contains('menu') && !menumobile.classList.contains('dnone')) { // eslint-disable no-restricted-globals
     menumobile.classList.toggle('dnone');
     document.removeEventListener('click', clickHandler);
   }
@@ -46,7 +47,7 @@ const comedians = {
     'https://www.instagram.com/reubensolo/',
     '🇦🇺 Aus and 🇬🇧 UK tour on sale <br> Next up: Melbourne <br> TICKETS ⤵️ <br> www.reubensolo.com',
   ],
-}
+};
 
 function createcomedian(i) {
   return ''
@@ -55,7 +56,7 @@ function createcomedian(i) {
   + `<h2 class="comedianname">${Object.keys(comedians)[i]}</h2>`
   + `<h2 class="mp0">${comedians[Object.keys(comedians)[i]][0]}</h2>`
   + `<p class="mp0">${comedians[Object.keys(comedians)[i]][3]}</p>`
-+ '</div>'
++ '</div>';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
