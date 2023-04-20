@@ -22,7 +22,7 @@ menubutton.addEventListener('click', () => {
 
 //  comedians
 
-const comediancontainer = document.querySelectorAll('.comediancontainer');
+const comediansection = document.querySelector('.comediansection');
 const comedians = {
   'Matt Rife': [
     'Comedian',
@@ -52,20 +52,31 @@ const comedians = {
 
 function createcomedian(i) {
   return ''
-+ `<a href="${comedians[Object.keys(comedians)[i]][2]}" target="_blank" rel="noopener"><img class="instagramicon" src="img/${comedians[Object.keys(comedians)[i]][1]}" alt="Instagram"></a>`
-+ '<div class="comediantext dflex flexcolumn">'
-  + `<h2 class="comedianname">${Object.keys(comedians)[i]}</h2>`
-  + `<h2 class="mp0">${comedians[Object.keys(comedians)[i]][0]}</h2>`
-  + `<p class="mp0">${comedians[Object.keys(comedians)[i]][3]}</p>`
++ '<div class="Comedian dflex">'  
+  + `<a href="${comedians[Object.keys(comedians)[i]][2]}" target="_blank" rel="noopener"><img class="instagramicon" src="img/${comedians[Object.keys(comedians)[i]][1]}" alt="Instagram"></a>`
+  + '<div class="comediantext dflex flexcolumn">'
+    + `<h2 class="comedianname">${Object.keys(comedians)[i]}</h2>`
+    + `<h2 class="mp0">${comedians[Object.keys(comedians)[i]][0]}</h2>`
+    + `<p class="mp0">${comedians[Object.keys(comedians)[i]][3]}</p>`
+  + '</div>'
 + '</div>';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  for (let i = 0; i < Object.keys(comedians).length; i++) {
-    const div1 = document.createElement('div');
-    div1.classList.add('Comedian', 'dflex');
-    div1.innerHTML = createcomedian(i);
-    if (i % 2 === 0) comediancontainer[0].appendChild(div1);
-    else comediancontainer[1].appendChild(div1);
+  let comediancontainerstr = '';
+  const div1 = document.createElement('div');
+  for (let i = 0; i < Object.keys(comedians).length; i+=2) {
+    if (window.innerWidth < 768 && i >=2) comediancontainerstr += '<div class="comediancontainer dflex flexcolumn dnone">';
+    else comediancontainerstr += '<div class="comediancontainer dflex flexcolumn">';
+    div1.classList.add('featuredcomedians', 'dflex', 'flexcolumn', 'py64');
+    comediancontainerstr += createcomedian(i);
+    if (i+1 < Object.keys(comedians).length) comediancontainerstr += createcomedian(i+1);
+    comediancontainerstr += '</div>';
+    if (window.innerWidth > 768 && i >=2) comediancontainerstr += '</div>';
   }
+  div1.innerHTML = ''
+  + '<p class="alignselfcenter">Featured Comedians</p>'
+  + '<span class="spanline1 alignselfcenter"></span>'
+  + comediancontainerstr
+  comediansection.appendChild(div1);
 });
