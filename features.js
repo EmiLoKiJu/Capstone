@@ -28,7 +28,7 @@ const comedians = {
     'Comedian',
     'mattrife.png',
     'https://www.instagram.com/mattrife/',
-    '"Standup Comedian/Actor/Person. Stop taking the internet so seriously❤️ TOUR DATES 👇🏼 <br> mattrifeofficial.com"',
+    '"Standup Comedian/Actor/Person. Stop taking the internet so seriously❤️ TOUR DATES 👇🏼<br> mattrifeofficial.com"',
   ],
   'Jeff Arcuri': [
     'Comedian',

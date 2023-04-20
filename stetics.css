@@ -1,3 +1,7 @@
+nav {
+  display: none;
+}
+
 header {
   font-family: 'COCOGOOSE', sans-serif;
   margin: 8px 4% 8px 4%;
@@ -11,7 +15,7 @@ h1 {
   font-family: 'COCOGOOSE', sans-serif;
   margin: 16px 4%;
   font-size: 32px;
-  background-image: url(img/backgroundorange.jpg);
+  background-image: url(img/backgroundorange.png);
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -23,7 +27,7 @@ h2 {
   margin: 8px 4% 0 4%;
   padding-top: 16px;
   font-weight: 400;
-  color: #ec9b23;
+  color: #ff5239;
 }
 
 h3 {
@@ -36,7 +40,7 @@ h4 {
   font-size: 16px;
   margin: 0 8px 0 8px;
   font-weight: 400;
-  color: #ec9b23;
+  color: #ff5239;
   width: 100px;
 }
 
@@ -62,7 +66,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #ec9b23;
+  color: #ff5239;
 }
 
 .dflex {
@@ -112,6 +116,12 @@ a {
   background-size: cover;
 }
 
+.socialmediaicon {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+}
+
 .eventdescription {
   font-family: 'Lato', sans-serif;
   margin: 5px 4%;
@@ -128,7 +138,7 @@ a {
 }
 
 .spanline1 {
-  background-color: #ec9b23;
+  background-color: #ff5239;
   height: 2px;
   width: 4%;
 }
@@ -136,6 +146,11 @@ a {
 .programitem {
   margin: 16px 4%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.programitem:hover {
+  border: solid 2px white;
+  margin: 14px 4%;
 }
 
 .programicon {
@@ -149,10 +164,11 @@ a {
 }
 
 .button {
-  font-family: 'COCOGOOSE', sans-serif;
-  background-color: #ec9b23;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  background-color: #ff5239;
   color: white;
-  margin: 16px 4%;
+  margin: 16px 4% 36px 4%;
   padding: 16px;
 }
 
@@ -161,7 +177,7 @@ a {
 }
 
 .comediancontainer {
-  margin: 0 4%;
+  margin: 16px 4% 8px 4%;
 }
 
 .Comedian {
@@ -202,6 +218,19 @@ h2.mp0 {
 
 .logoimgdesktop {
   display: none;
+}
+
+.seemore {
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  margin: 16px 4%;
+  text-align: center;
+  border: 1px #d7d7d7 solid;
+  padding: 16px;
+}
+
+.downarrow {
+  margin-left: 12px;
 }
 
 /* about html */
@@ -282,6 +311,13 @@ h2.mp0 {
 }
 
 @media screen and (min-width: 768px) {
+  nav {
+    display: block;
+    background-color: black;
+    text-align: end;
+    padding: 8px 8%;
+  }
+
   header {
     margin: 8px 8% 8px 8%;
   }
@@ -355,6 +391,10 @@ h2.mp0 {
     margin: 20px 1% 0 2%;
   }
 
+  .navbarlist li:last-child {
+    margin: 20px 0 0 2%;
+  }
+
   .mainprogramtitle {
     font-size: 24px;
   }
@@ -372,6 +412,10 @@ h2.mp0 {
     justify-content: start;
   }
 
+  .programitem:hover {
+    margin: 14px 0px;
+  }
+
   .spanline1 {
     margin: 16px 0;
   }
@@ -385,6 +429,7 @@ h2.mp0 {
     margin: 32px;
     font-size: 24px;
     text-decoration: underline;
+    color: white;
   }
 
   .comediancontainer {
