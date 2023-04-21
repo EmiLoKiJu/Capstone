@@ -72,7 +72,7 @@ function createcomedian(i) {
 function togglecomedians() {
   deployedcomedians = !deployedcomedians;
   const seemorecomedians = document.querySelectorAll('.seemorecomedians');
-  for(let i = 0; i < seemorecomedians.length; i++) seemorecomedians[i].classList.toggle('dnone');
+  for (let i = 0; i < seemorecomedians.length; i++) seemorecomedians[i].classList.toggle('dnone');
   more.classList.toggle('dnone');
   less.classList.toggle('dnone');
 }
@@ -82,14 +82,9 @@ morebutton.addEventListener('click', togglecomedians);
 function displaycomedians() {
   if (window.innerWidth >= 768 && !deployedcomedians) {
     togglecomedians();
-    console.log('called function 1');
-    console.log(deployedcomedians);
     comesfrombiggerwidth = true;
-  }
-  else if (window.innerWidth < 768 && comesfrombiggerwidth) {
+  } else if (window.innerWidth < 768 && comesfrombiggerwidth) {
     togglecomedians();
-    console.log('called function 2');
-    console.log(deployedcomedians);
     comesfrombiggerwidth = false;
   }
 }
@@ -106,9 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
     else comediancontainerstr += '<div class="comediancontainer dflex flexcolumn">';
     div1.classList.add('featuredcomedians', 'dflex', 'flexcolumn', 'py64');
     comediancontainerstr += createcomedian(i);
-    if (i+1 < Object.keys(comedians).length) comediancontainerstr += createcomedian(i+1);
+    if (i + 1 < Object.keys(comedians).length) comediancontainerstr += createcomedian(i + 1);
     comediancontainerstr += '</div>';
-    if (window.innerWidth >= 768 && i >=2) comediancontainerstr += '</div>';
+    if (window.innerWidth >= 768 && i >= 2) comediancontainerstr += '</div>';
   }
 
   div1.innerHTML = ''
@@ -116,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
   + '<span class="spanline1 alignselfcenter"></span>'
   + `${comediancontainerstr}`;
   comediansection.appendChild(div1);
-  const seemorecomedians = document.querySelectorAll('.seemorecomedians');
   if (window.innerWidth >= 768) {
     togglecomedians();
     comesfrombiggerwidth = true;

@@ -8,7 +8,7 @@ const clickHandler = () => {
     document.removeEventListener('click', clickHandler);
   }
 };
-  
+
 menubutton.addEventListener('click', () => {
   if (menumobile.classList.contains('dnone')) {
     menumobile.classList.toggle('dnone');

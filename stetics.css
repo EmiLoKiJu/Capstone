@@ -318,10 +318,6 @@ h2.mp0 {
   color: #ff5239;
 }
 
-.campaign:hover {
-  background-color: #dadada;
-}
-
 .menumobile .fixed {
   border: 2px #ff5239 solid;
   z-index: 1;
@@ -344,6 +340,10 @@ h2.mp0 {
   text-align: center;
   padding-top: 8px;
   margin-top: 32px;
+}
+
+.campaign:hover {
+  background-color: #dadada;
 }
 
 .endpage {
@@ -483,7 +483,7 @@ h2.mp0 {
   }
 
   .programitem:hover {
-    margin: 14px 0px;
+    margin: 14px 0;
   }
 
   .spanline1 {
@@ -556,12 +556,10 @@ h2.mp0 {
   .pastevent:first-child {
     width: 50%;
     height: 50%;
-    /* margin: 32px; */
   }
 
   .pastevent:last-child {
     width: 29%;
     height: 29%;
-    /* margin: 32px; */
   }
 }
