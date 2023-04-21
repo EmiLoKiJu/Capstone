@@ -367,6 +367,16 @@ h2.mp0 {
     margin: 8px 16px;
   }
 
+  nav img:hover {
+    border: 1px solid white;
+    margin: 3px;
+  }
+
+  nav div:hover {
+    border: 1px solid white;
+    margin: 7px 15px;
+  }
+
   header {
     margin: 8px 8% 8px 8%;
   }
@@ -434,6 +444,10 @@ h2.mp0 {
 
   .logoimgdesktop {
     display: block;
+  }
+
+  .logoimgdesktop:hover {
+    color
   }
 
   .seemore {

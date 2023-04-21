@@ -15,7 +15,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
+- [💻 Video Presentation](#video-presentation)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
@@ -60,9 +60,9 @@
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## 💻 Getting Started <a name="video-presentation"></a>
 
-Open the website and feel free to navegate.
+Feel free to see the presentation of the project [video](https://youtu.be/vX-53sivsJk)
 
 ### Prerequisites
 
