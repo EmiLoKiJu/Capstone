@@ -181,6 +181,11 @@ a {
   padding: 16px;
 }
 
+.button:hover {
+  background-color: white;
+  color: #ff5239;
+}
+
 .featuredcomedians {
   padding-top: 16px;
 }
