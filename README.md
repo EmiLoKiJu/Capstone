@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link] coming soon~
+- [See live](https://emilokiju.github.io/Capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,9 +140,9 @@ If you like this project, contact me for any business project.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse.org for giving me this oportunity.
+Credits to Cindy Shin, the author of the [Original Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+I would like to thank microverse.org for giving me this oportunity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
