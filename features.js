@@ -57,7 +57,7 @@ const comedians = {
 
 function createcomedian(i) {
   return ''
-+ '<div class="Comedian dflex">'  
++ '<div class="Comedian dflex">'
   + `<a href="${comedians[Object.keys(comedians)[i]][2]}" target="_blank" rel="noopener"><img class="instagramicon" src="img/${comedians[Object.keys(comedians)[i]][1]}" alt="Instagram"></a>`
   + '<div class="comediantext dflex flexcolumn">'
     + `<h2 class="comedianname">${Object.keys(comedians)[i]}</h2>`
@@ -69,22 +69,17 @@ function createcomedian(i) {
 
 // More Button implemented
 
-morebutton.addEventListener('click', togglecomedians);
-
 function togglecomedians() {
-  console.log(deployedcomedians);
   deployedcomedians = !deployedcomedians;
-  console.log(deployedcomedians);
   const seemorecomedians = document.querySelectorAll('.seemorecomedians');
-  for(i = 0; i < seemorecomedians.length; i++) seemorecomedians[i].classList.toggle('dnone');
+  for(let i = 0; i < seemorecomedians.length; i++) seemorecomedians[i].classList.toggle('dnone');
   more.classList.toggle('dnone');
   less.classList.toggle('dnone');
 }
 
-window.addEventListener("resize", displaycomedians);
+morebutton.addEventListener('click', togglecomedians);
 
 function displaycomedians() {
-  console.log('called function resize');
   if (window.innerWidth >= 768 && !deployedcomedians) {
     togglecomedians();
     console.log('called function 1');
@@ -99,13 +94,15 @@ function displaycomedians() {
   }
 }
 
+window.addEventListener('resize', displaycomedians);
+
 // Comedians when loaded
 
 document.addEventListener('DOMContentLoaded', () => {
   let comediancontainerstr = '';
   const div1 = document.createElement('div');
-  for (let i = 0; i < Object.keys(comedians).length; i+=2) {
-    if (i >=2) comediancontainerstr += '<div class="comediancontainer dflex flexcolumn seemorecomedians dnone">';
+  for (let i = 0; i < Object.keys(comedians).length; i += 2) {
+    if (i >= 2) comediancontainerstr += '<div class="comediancontainer dflex flexcolumn seemorecomedians dnone">';
     else comediancontainerstr += '<div class="comediancontainer dflex flexcolumn">';
     div1.classList.add('featuredcomedians', 'dflex', 'flexcolumn', 'py64');
     comediancontainerstr += createcomedian(i);
@@ -117,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
   div1.innerHTML = ''
   + '<p class="alignselfcenter">Featured Comedians</p>'
   + '<span class="spanline1 alignselfcenter"></span>'
-  + comediancontainerstr;
+  + `${comediancontainerstr}`;
   comediansection.appendChild(div1);
   const seemorecomedians = document.querySelectorAll('.seemorecomedians');
   if (window.innerWidth >= 768) {
