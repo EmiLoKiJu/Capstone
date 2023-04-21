@@ -15,7 +15,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
+- [💻 Video Presentation](#video-presentation)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
@@ -54,15 +54,15 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link] coming soon~
+- [See live](https://emilokiju.github.io/Capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## 💻 Getting Started <a name="video-presentation"></a>
 
-Open the website and feel free to navegate.
+Feel free to see the presentation of the project [video](https://youtu.be/vX-53sivsJk)
 
 ### Prerequisites
 
@@ -140,9 +140,9 @@ If you like this project, contact me for any business project.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse.org for giving me this oportunity.
+Credits to Cindy Shin, the author of the [Original Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+I would like to thank microverse.org for giving me this oportunity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

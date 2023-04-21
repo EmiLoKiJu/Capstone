@@ -1,3 +1,585 @@
+nav {
+  display: none;
+}
+
 header {
   font-family: 'COCOGOOSE', sans-serif;
+  margin: 8px 4% 8px 4%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+  margin: 16px 4%;
+  font-size: 32px;
+  background-image: url(img/backgroundorange.png);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 18px;
+  margin: 8px 4% 0 4%;
+  padding-top: 16px;
+  font-weight: 400;
+  color: #ff5239;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  margin: 16px 4% 0 4%;
+}
+
+h4 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 16px;
+  margin: 0 8px 0 8px;
+  font-weight: 400;
+  color: #ff5239;
+  width: 100px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  margin: 0 4%;
+  padding-bottom: 16px;
+}
+
+img {
+  object-fit: contain;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 20px 4% 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #414244;
+}
+
+.dflex {
+  display: flex;
+}
+
+.flexcolumn {
+  flex-direction: column;
+}
+
+.justifyandaligncenter {
+  align-items: center;
+  justify-content: center;
+}
+
+.spacebetween {
+  justify-content: space-between;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.py16 {
+  padding: 16px 0;
+}
+
+.my16 {
+  margin: 16px 0;
+}
+
+.alignselfcenter {
+  align-self: center;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.dnone {
+  display: none;
+}
+
+.fwrap {
+  flex-wrap: wrap;
+}
+
+.acontainer {
+  color: #ff5239;
+  padding: 0;
+}
+
+.homepage {
+  width: 100%;
+  background-image: url(img/backgroundimg.jpg);
+  background-size: cover;
+}
+
+.socialmediaicon {
+  width: 22px;
+  height: 22px;
+  background-color: #414244;
+  margin: 4px;
+}
+
+.eventdescription {
+  font-family: 'Lato', sans-serif;
+  margin: 5px 4%;
+  padding: 6%;
+  border: 2px white solid;
+  background-color: #eee7d9;
+}
+
+.mainprogram {
+  background-image: url(img/backgroundblack.png);
+  background-size: cover;
+  color: white;
+  padding-top: 16px;
+}
+
+.spanline1 {
+  background-color: #ff5239;
+  height: 2px;
+  width: 4%;
+}
+
+.programitem {
+  margin: 16px 4%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.programitem:hover {
+  border: solid 2px white;
+  margin: 14px 4%;
+}
+
+.programicon {
+  margin: 0 8px 0 16px;
+}
+
+.colorwhite {
+  padding-top: 16px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  background-color: #ff5239;
+  color: white;
+  margin: 16px 4% 36px 4%;
+  padding: 16px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #ff5239;
+}
+
+.featuredcomedians {
+  padding-top: 16px;
+}
+
+.comediancontainer {
+  margin: 16px 4% 8px 4%;
+}
+
+.Comedian {
+  align-self: flex-start;
+  width: 50%;
+}
+
+.instagramicon {
+  width: 104px;
+  height: 104px;
+  margin: 4px;
+}
+
+.comedianname {
+  color: #414244;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 6px;
+}
+
+.mp0 {
+  margin: 0;
+  padding: 0;
+}
+
+h2.mp0 {
+  font-size: 16px;
+}
+
+.comediantext {
+  margin-left: 10%;
+}
+
+.menudesktop {
+  display: none;
+}
+
+.logoimgdesktop {
+  display: none;
+}
+
+.seemore {
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  margin: 16px 4%;
+  text-align: center;
+  border: 1px #d7d7d7 solid;
+  padding: 16px;
+}
+
+.arrow {
+  margin-left: 12px;
+}
+
+/* about html */
+
+.about {
+  text-align: center;
+}
+
+.bigtitle {
+  font-size: 32px;
+  color: #ff5239;
+}
+
+.eventdescription2 {
+  font-family: 'Lato', sans-serif;
+  margin: 5px 4%;
+  padding: 6%;
+  border: 2px #eee7d9 solid;
+  background-color: white;
+}
+
+.myemail {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.imgcontainer {
+  padding: 8px;
+  border: 2px solid #dadada;
+}
+
+.spanline2 {
+  background-color: #dadada;
+  height: 2px;
+  width: 100%;
+}
+
+.pastevent {
+  width: 90%;
+  height: 90%;
+  align-self: center;
+}
+
+.partners {
+  background-color: #414244;
+  color: white;
+  margin-top: 16px;
+  padding-bottom: 16px;
+}
+
+.seefullprogram {
+  display: none;
+}
+
+#menumobile li {
+  font-family: 'Lato', sans-serif;
+  margin: 16px 0 0 0;
+  width: fit-content;
+  font-size: 24px;
+}
+
+#menumobile li:last-child {
+  width: 220px;
+}
+
+#menumobile li:hover {
+  color: #ff5239;
+}
+
+#menumobile a:first-child:hover {
+  color: #ff5239;
+}
+
+.menumobile .fixed {
+  border: 2px #ff5239 solid;
+  z-index: 1;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  padding: 4%;
+}
+
+.spanline1.dflex {
+  margin-top: 26px;
+  width: 75%;
+}
+
+.campaign {
+  width: 220px;
+  height: 37px;
+  color: #ff5239;
+  border: solid 3px #ff5239;
+  text-align: center;
+  padding-top: 8px;
+  margin-top: 32px;
+}
+
+.campaign:hover {
+  background-color: #ff5239;
+  color: white !important;
+}
+
+.endpage {
+  margin: 4px 4%;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: end;
+    background-color: #414244;
+    text-align: end;
+    padding: 0 8%;
+  }
+
+  nav div {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 8px 16px;
+  }
+
+  nav img:hover {
+    border: 1px solid white;
+    margin: 3px;
+  }
+
+  nav div:hover {
+    border: 1px solid white;
+    margin: 7px 15px;
+  }
+
+  header {
+    margin: 8px 8% 8px 8%;
+  }
+
+  h2 {
+    margin: 0 8%;
+    padding-top: 64px;
+    font-size: 32px;
+    font-weight: 100;
+  }
+
+  h1 {
+    margin: 0 8%;
+    font-size: 48px;
+    padding-bottom: 32px;
+  }
+
+  h3 {
+    margin: 32px 8% 0 8%;
+  }
+
+  h4 {
+    padding-top: 16px;
+    height: 35px;
+  }
+
+  p {
+    margin: 0 8%;
+  }
+
+  .eventdescription {
+    margin: 0 8%;
+    width: 40%;
+    padding: 2%;
+  }
+
+  .pb128 {
+    padding-bottom: 128px;
+  }
+
+  .py64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .mt32 {
+    margin-top: 32px;
+  }
+
+  .logo {
+    order: -1;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menudesktop {
+    display: block;
+  }
+
+  .logoimgmobile {
+    display: none;
+  }
+
+  .logoimgdesktop {
+    display: block;
+  }
+
+  .seemore {
+    display: none;
+  }
+
+  .campaignnavbar {
+    border: solid 2px #ff5239;
+    padding: 0;
+    width: 290px;
+    margin: 12px 0 0 8px;
+  }
+
+  .navbarlist li {
+    color: #414244;
+    margin: 20px 1% 0 2%;
+  }
+
+  .navbarlist li:last-child {
+    color: #ff5239;
+    padding: 8px;
+    margin: 0;
+  }
+
+  .navbarlist li:hover {
+    color: #ff5239;
+  }
+
+  .navbarlist a:hover {
+    color: #ff5239;
+  }
+
+  .navbarlist li:last-child:hover {
+    background-color: #ff5239;
+    color: white;
+  }
+
+  .mainprogramtitle {
+    font-size: 24px;
+  }
+
+  .hellohappyworld {
+    display: none;
+  }
+
+  .programcontainer {
+    flex-direction: row;
+    margin: 0 8%;
+  }
+
+  .programitem {
+    flex-direction: column;
+    margin: 16px 2px;
+    padding-top: 16px;
+    height: 276px;
+    justify-content: start;
+  }
+
+  .programitem:hover {
+    margin: 14px 0;
+  }
+
+  .spanline1 {
+    margin: 16px 0;
+  }
+
+  .jointhis {
+    display: none;
+  }
+
+  .seefullprogram {
+    display: block;
+    margin: 32px;
+    font-size: 24px;
+    text-decoration: underline;
+    color: white;
+  }
+
+  .comediancontainer {
+    width: 85%;
+    flex-direction: row;
+    margin: 0 8%;
+  }
+
+  .featuredcomedians {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .comediantext {
+    margin-left: 2%;
+  }
+
+  .Comedian {
+    margin: 16px 0;
+  }
+
+  .instagramicon {
+    width: 165px;
+    height: 165px;
+  }
+
+  p.mp0 {
+    width: 50%;
+  }
+
+  .campaign {
+    width: 310px;
+    height: 34px;
+    margin-top: 8px !important;
+  }
+
+  .footermain {
+    display: block;
+  }
+
+  /* about html */
+
+  .eventdescription2 {
+    margin: 24px 11%;
+    width: 74%;
+    padding: 2%;
+  }
+
+  .pasteventscontainer {
+    flex-direction: row;
+    margin: 4px 11%;
+  }
+
+  .pastevent:first-child {
+    width: 50%;
+    height: 50%;
+  }
+
+  .pastevent:last-child {
+    width: 29%;
+    height: 29%;
+  }
 }
