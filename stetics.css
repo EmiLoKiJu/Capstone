@@ -66,7 +66,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #ff5239;
+  color: #414244;
 }
 
 .dflex {
@@ -110,6 +110,14 @@ a {
   display: none;
 }
 
+.fwrap {
+  flex-wrap: wrap;
+}
+
+.fontorange {
+  color: #ff5239;
+}
+
 .homepage {
   width: 100%;
   background-image: url(img/backgroundimg.jpg);
@@ -117,9 +125,10 @@ a {
 }
 
 .socialmediaicon {
-  width: 16px;
-  height: 16px;
-  background-color: black;
+  width: 22px;
+  height: 22px;
+  background-color: #414244;
+  margin: 4px;
 }
 
 .eventdescription {
@@ -192,7 +201,7 @@ a {
 }
 
 .comedianname {
-  color: black;
+  color: #414244;
   font-size: 28px;
   font-weight: 400;
   margin: 0;
@@ -229,15 +238,19 @@ h2.mp0 {
   padding: 16px;
 }
 
-.downarrow {
+.arrow {
   margin-left: 12px;
 }
 
 /* about html */
 
+.about {
+  text-align: center;
+}
+
 .bigtitle {
   font-size: 32px;
-  color: #eb8d00;
+  color: #ff5239;
 }
 
 .eventdescription2 {
@@ -265,12 +278,13 @@ h2.mp0 {
 }
 
 .pastevent {
-  width: 75%;
-  height: 75%;
+  width: 90%;
+  height: 90%;
+  align-self: center;
 }
 
 .partners {
-  background-color: black;
+  background-color: #414244;
   color: white;
   margin-top: 16px;
   padding-bottom: 16px;
@@ -281,13 +295,30 @@ h2.mp0 {
 }
 
 #menumobile li {
+  font-family: 'Lato', sans-serif;
   margin: 16px 0 0 0;
   width: fit-content;
   font-size: 24px;
 }
 
+#menumobile li:last-child {
+  width: 220px;
+}
+
+#menumobile li:hover {
+  color: #ff5239;
+}
+
+#menumobile a:first-child:hover {
+  color: #ff5239;
+}
+
+.campaign:hover {
+  background-color: #dadada;
+}
+
 .menumobile .fixed {
-  border: 2px #eb8d00 solid;
+  border: 2px #ff5239 solid;
   z-index: 1;
   background-color: white;
   width: 80%;
@@ -303,19 +334,30 @@ h2.mp0 {
 .campaign {
   width: 220px;
   height: 37px;
-  color: #eb8d00;
-  border: solid 3px #eb8d00;
+  color: #ff5239;
+  border: solid 3px #ff5239;
   text-align: center;
   padding-top: 8px;
   margin-top: 32px;
 }
 
+.endpage {
+  margin: 4px 4%;
+}
+
 @media screen and (min-width: 768px) {
   nav {
-    display: block;
-    background-color: black;
+    display: flex;
+    justify-content: end;
+    background-color: #414244;
     text-align: end;
-    padding: 8px 8%;
+    padding: 0 8%;
+  }
+
+  nav div {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 8px 16px;
   }
 
   header {
@@ -387,16 +429,39 @@ h2.mp0 {
     display: block;
   }
 
+  .seemore {
+    display: none;
+  }
+
   .navbarlist li {
+    color: #414244;
     margin: 20px 1% 0 2%;
   }
 
   .navbarlist li:last-child {
+    color: #ff5239;
     margin: 20px 0 0 2%;
+  }
+
+  .navbarlist li:hover {
+    color: #ff5239;
+  }
+
+  .navbarlist a:hover {
+    color: #ff5239;
+  }
+
+  .navbarlist li:last-child:hover {
+    background-color: #ff5239;
+    color: white;
   }
 
   .mainprogramtitle {
     font-size: 24px;
+  }
+
+  .hellohappyworld {
+    display: none;
   }
 
   .programcontainer {
@@ -469,24 +534,25 @@ h2.mp0 {
   /* about html */
 
   .eventdescription2 {
-    margin: 0 8%;
-    width: 40%;
+    margin: 24px 11%;
+    width: 74%;
     padding: 2%;
   }
 
   .pasteventscontainer {
     flex-direction: row;
+    margin: 4px 11%;
   }
 
   .pastevent:first-child {
     width: 50%;
     height: 50%;
-    margin: 32px;
+    /* margin: 32px; */
   }
 
   .pastevent:last-child {
     width: 29%;
     height: 29%;
-    margin: 32px;
+    /* margin: 32px; */
   }
 }

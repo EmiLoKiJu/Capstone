@@ -4,6 +4,11 @@
 
 const menumobile = document.querySelector('#menumobile');
 const menubutton = document.querySelector('.menu');
+const morebutton = document.querySelector('.seemore');
+const more = document.querySelector('.more');
+const less = document.querySelector('.less');
+let deployedcomedians = false;
+let comesfrombiggerwidth = false;
 
 const clickHandler = () => {
   // eslint-disable-next-line no-restricted-globals
@@ -62,21 +67,61 @@ function createcomedian(i) {
 + '</div>';
 }
 
+// More Button implemented
+
+morebutton.addEventListener('click', togglecomedians);
+
+function togglecomedians() {
+  console.log(deployedcomedians);
+  deployedcomedians = !deployedcomedians;
+  console.log(deployedcomedians);
+  const seemorecomedians = document.querySelectorAll('.seemorecomedians');
+  for(i = 0; i < seemorecomedians.length; i++) seemorecomedians[i].classList.toggle('dnone');
+  more.classList.toggle('dnone');
+  less.classList.toggle('dnone');
+}
+
+window.addEventListener("resize", displaycomedians);
+
+function displaycomedians() {
+  console.log('called function resize');
+  if (window.innerWidth >= 768 && !deployedcomedians) {
+    togglecomedians();
+    console.log('called function 1');
+    console.log(deployedcomedians);
+    comesfrombiggerwidth = true;
+  }
+  else if (window.innerWidth < 768 && comesfrombiggerwidth) {
+    togglecomedians();
+    console.log('called function 2');
+    console.log(deployedcomedians);
+    comesfrombiggerwidth = false;
+  }
+}
+
+// Comedians when loaded
+
 document.addEventListener('DOMContentLoaded', () => {
   let comediancontainerstr = '';
   const div1 = document.createElement('div');
   for (let i = 0; i < Object.keys(comedians).length; i+=2) {
-    if (window.innerWidth < 768 && i >=2) comediancontainerstr += '<div class="comediancontainer dflex flexcolumn dnone">';
+    if (i >=2) comediancontainerstr += '<div class="comediancontainer dflex flexcolumn seemorecomedians dnone">';
     else comediancontainerstr += '<div class="comediancontainer dflex flexcolumn">';
     div1.classList.add('featuredcomedians', 'dflex', 'flexcolumn', 'py64');
     comediancontainerstr += createcomedian(i);
     if (i+1 < Object.keys(comedians).length) comediancontainerstr += createcomedian(i+1);
     comediancontainerstr += '</div>';
-    if (window.innerWidth > 768 && i >=2) comediancontainerstr += '</div>';
+    if (window.innerWidth >= 768 && i >=2) comediancontainerstr += '</div>';
   }
+
   div1.innerHTML = ''
   + '<p class="alignselfcenter">Featured Comedians</p>'
   + '<span class="spanline1 alignselfcenter"></span>'
-  + comediancontainerstr
+  + comediancontainerstr;
   comediansection.appendChild(div1);
+  const seemorecomedians = document.querySelectorAll('.seemorecomedians');
+  if (window.innerWidth >= 768) {
+    togglecomedians();
+    comesfrombiggerwidth = true;
+  }
 });
